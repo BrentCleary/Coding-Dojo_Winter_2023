@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    /*text-decoration: none;*/
+    color: red;
+}
+
+h1 {
+    color: rebeccapurple;
+    display: inline;
+}
+
+.box {
+    /*
+        For creating a border, include 3 things:
+        size: 2px
+        style: solid
+        color: red
+
+        ex. border: 1px solid red;
+    */
+    border: 7px solid purple;
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    padding: 20px; /* You are changing the dimensions of the element*/
+    margin: 40px; /* Margin creates space between elements */
+}
+
+/*
+    Box-sizing border-box; will limit the content to the size of the border;
+*/

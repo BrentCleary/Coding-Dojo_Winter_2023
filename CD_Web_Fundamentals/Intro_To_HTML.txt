@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+
+<!-- HTML Tags do not have parents!-->
+<html>
+
+<!-- Holds meta information about our page -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+</head>
+
+<!-- body holds all of the content -->
+<body>
+
+    <h1>Hello from H1!</h1>
+    <p>Just some text</p>
+
+
+    Hello World!
+</body>
+
+</html>
