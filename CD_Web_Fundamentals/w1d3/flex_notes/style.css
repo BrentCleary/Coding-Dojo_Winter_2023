@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* We want to apply Flex from the parent element/container */
+
+ul {
+    list-style: none;
+    display: flex;
+    /*  Justify Content can ONLY be used with FLEX
+        This can help us control the HORIZONTAL spacing/position*/
+    justify-content: space-evenly;
+}
+
+.flexed {
+    display: flex;
+
+}
+
+.centered{
+    align-items: center;
+}
+
+.font-color {
+    
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+}
+
+#message {
+    width: inherit;
+    border: 1px solid;
+    border-radius: 10px;
+    overflow:     
+}

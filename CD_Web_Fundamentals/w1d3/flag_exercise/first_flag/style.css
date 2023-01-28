@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbox {
+    background-color: #0F47AF;
+    width: 600px;
+    height: 100px;
+}
+
+.middlebox {
+    background-color: white;
+    width: 600px;
+    height: 100px;
+}
+
+.bottombox {
+    background-color: #078930;
+    width: 600px;
+    height: 100px;
+}

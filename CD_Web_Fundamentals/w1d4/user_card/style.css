@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*---------- Containers-----------*/
+
+.container {
+    width: 600px;
+    height: 350px;
+    background-color: white;
+    border-width: 3px;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+.header-bar {
+    height: 100px;
+    background-color: lightseagreen;
+}
+
+.info-bar {
+
+}
+
+/*------------ Content Bars----------------*/
+
+.profile-pic {
+    margin-left: 25px;
+
+}
+
+.user-img {
+    margin-top: -50px;
+    width: 100px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+.name-bar {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.location-bar {
+    margin-left: 25px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.user-description {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.edit-button{
+    margin-left: 25px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.edit-button a {
+    color:rgb(32, 103, 178);
+}
+
+
+/* -------- images ----------*/
+
+.user-img {
+    width: 100px;
+}
+
+.map-marker-img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.gear-img {
+    width: 20px;
+    margin-right: 5px;
+}
+

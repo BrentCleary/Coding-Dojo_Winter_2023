@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    height: 50px;
+    width: 50px;
+    margin: 50px;
+    background-color: aqua;
+    flex: 1;
+}
+
+.col-2 {
+    height: 50px;
+    width: 50px;
+    margin: 50px;
+    background-color: aqua;
+    flex: 2;
+}
+
+.col-3 {
+    height: 50px;
+    width: 50px;
+    margin: 50px;
+    background-color: aqua;
+    flex: 3;
+}
