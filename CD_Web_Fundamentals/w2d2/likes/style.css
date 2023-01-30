@@ -1,0 +1,151 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+/* --------- Containers ---------*/
+
+.container {
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+}
+
+.col1 {
+    flex: 1;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.col2 {
+    flex: 3;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+
+
+/* --------- Nav Bar ---------*/
+
+.nav-bar {
+    height: 100px;
+    width: 1000px;
+    background-color: blue;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-bar h1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+
+/* --------- Your Feed Bar ---------*/
+
+.feed-title-bar {
+    width: 1000px;
+    color: black;
+    display: flex;
+    align-items: center;
+
+}
+
+.feed-title-bar h1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* --------- User Profile Box ---------*/
+
+.user-profile-container {
+    height: 400px;
+    width: inherit;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.user-profile-image {
+    width: inherit;
+}
+
+.user-profile-image img {
+    height: 150px;
+}
+.user-profile-edit {
+    width: inherit;
+}
+
+.user-profile-name {
+    width: inherit;
+}
+
+/* --------- Feed Content Boxes ---------*/
+
+.feed-content-container {
+    width: 600px;
+    height: 200px;
+    margin-bottom: 50px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+    /* --------- Feed Box (Name + Likes + Button Box) ---------*/
+.feed-name-like-box {
+    width: inherit;
+    height: 50%;
+    display: flex;
+}
+
+.feed-name-box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feed-like-box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feed-like-button {
+    height: 40px;
+    width: 80px;
+    background-color: goldenrod;
+    box-shadow: black 10px 5px 5px 0px;
+}
+
+
+    /* --------- Feed Box Likes #Tags ---------*/
+
+#likes-counter1 {
+
+}
+
+#likes-counter2 {
+
+}
+
+#likes-counter3 {
+    
+}
+
+    /* --------- Feed Box (Status Text) ---------*/
+.feed-status-text-box {
+    width: inherit;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

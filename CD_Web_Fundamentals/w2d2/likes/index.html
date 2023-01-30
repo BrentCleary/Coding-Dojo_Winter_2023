@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1 class="nav-bar h1">Network</h1>    
+    </div>
+    <div class="feed-title-bar">
+        <h1 class="feed-title-bar h1">Your Feed</h1>    
+    </div>
+
+    <div class="container">
+
+        <div class="col1">
+            <div class="user-profile-container">
+                <div class="user-profile-image">
+                    <img src="imgs\user-circle.png" alt="user-img">
+                </div>
+                <div class="user-profile-edit">
+                    <a href="#">Add an avatar</a>
+                </div>
+                <div class="user-profile-name">
+                    <h1>James Doe</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="col2">
+            <div class="feed-content-container">
+                <div class="feed-name-like-box">
+                    <div class="feed-name-box">
+                        <h1>Kelly</h1>
+                    </div>
+                    <div class="feed-like-box">
+                        <h2 id="likes-counter1" >0 Like(s)</h2>
+                        <button class="feed-like-button" onclick="add1()">Like</button>
+                    </div>
+                </div>
+                <div class="feed-status-text-box">
+                    <h1>How much wood would a seashell sell, if a wood piper could pipe a picker?</h1>
+                </div>
+            </div>
+            <div class="feed-content-container">
+                <div class="feed-name-like-box">
+                    <div class="feed-name-box">
+                        <h1>Carlos</h1>
+                    </div>
+                    <div class="feed-like-box">
+                        <h2 id="likes-counter2" >0 Like(s)</h2>
+                        <button class="feed-like-button" onclick="add2()">Like</button>
+                    </div>
+                </div>
+                <div class="feed-status-text-box">
+                    <h1>How much wood would a seashell sell, if a wood piper could pipe a picker?</h1>
+                </div>
+            </div>
+            <div class="feed-content-container">
+                <div class="feed-name-like-box">
+                    <div class="feed-name-box">
+                        <h1>Jeffrey</h1>
+                    </div>
+                    <div class="feed-like-box">
+                        <h2 id="likes-counter3" >0 Like(s)</h2>
+                        <button class="feed-like-button" onclick="add3()">Like</button>
+                    </div>
+                </div>
+                <div class="feed-status-text-box">
+                    <h1>How much wood would a seashell sell, if a wood piper could pipe a picker?</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

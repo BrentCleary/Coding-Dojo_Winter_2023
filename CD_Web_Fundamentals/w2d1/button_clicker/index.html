@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+<!--------------- Nav Bar Section --------------->
+    <div class="nav-bar-container">
+        <div class="nav-bar-logo-box">
+            <h1>Dojonary</h1>
+        </div>
+        <div class="nav-bar-search-box">
+            <input type="text" name="search-bar" placeholder="Search">
+        </div>
+        <div class="nav-bar-signout-box">
+            <button class="sign-out-btn" onclick="StatusChange(this)">Login</button>
+        </div>
+    </div>
+
+<!--------------- Content Section --------------->
+    <div class="row1">
+
+<!--------------- Like Definition Section --------------->
+        <div class="col1">
+
+<!--------------- Definition One Section --------------->
+            <div class="list-container">
+                <div class="list-content-box">
+                    <div class="list-content-word">
+                        <h1>ninja</h1>
+                        <h3>noun</h3>
+                        <h3>plural:ninjas</h3>
+                        <button class="list-content-button" onclick="alert('Ninja was liked')"># Likes </button>
+                    </div>
+                    <div class="list-content-definition">
+                        <h3>A practioner skilled in the <a href="#">Japanese</a> art of <a href="#">Ninjitsu</a></h3>
+                    </div>
+                </div>
+            </div>
+
+<!--------------- Definition Two Section --------------->
+            <div class="list-container">
+                <div class="list-content-box">
+                    <div class="list-content-word">
+                        <h1>ninja</h1>
+                        <h3>noun</h3>
+                        <h3>plural:ninjas</h3>
+                        <button class="list-content-button" onclick="IncreaseLikes(this)">0 Likes</button>
+                    </div>
+                    <div class="list-content-definition">
+                        <h3>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen like focus</a></h3>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+<!--------------- Add Definition Section --------------->
+        <div class="col2">
+            <div class="list-container">
+                <div class="list-content-box">
+                    <div class="list-content-word">
+                        <h2>Dojonary is defined by YOU</h2>
+                        <button class="add-definition-button" onclick="RemoveButton(this)">Add Definition</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
