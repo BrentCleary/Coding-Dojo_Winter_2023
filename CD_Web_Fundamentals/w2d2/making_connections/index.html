@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+
+<!----------------- Nav Bar ----------------->
+        <div class="nav-bar">
+            <div class="profile"><h1>Profile</h1></div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#"><span class="active">My Profile</a></span>
+                <a href="#">Find Connections</a>
+            </div>
+            <div class="sign-out-box">
+                <button class="sign-out-btn">Sign Out</button>
+            </div>
+        </div>
+
+
+<!----------------- Row 1 - Main Content ----------------->
+        <div class="row1">
+
+
+<!----------------- Column 1 ----------------->
+            <div class="col1">
+
+<!----------------- Profile Box ----------------->
+                <div class="user-profile">
+                    <div class="header-bar">
+                        <img class="user-img" src="imgs\images\Chonk.png" alt="chonk">
+                    </div>
+                    <div>
+                        <h1 id="username">Angry Chicken</h1>
+                        <div class="user-location">
+                            <img class="icon-size" src="imgs\icons\map-marker.png" alt="map-marker">
+                            <h3>Seattle</h3>
+                        </div>
+                        <div class="user-description">
+                            <h3>Developer | Engineer | Problem Solver</h3>
+                            <h3>Master of shadows and the Internet!</h3>
+                        </div>
+                        <div class="user-edit">
+                            <img class="icon-size" src="imgs\icons\gear.png" alt="gear.img">
+                            <h3 onclick="ChangeUserName()">edit profile</h3>
+                        </div>
+                    </div>
+                </div>
+
+<!----------------- Education Box ----------------->
+                <div class="education">
+                    <div class="title-bar">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="edu-box">
+                        <h1>Coding Dojo - Full Stack Bootcamp</h1>
+                        <h3>Jan 2023 - May 2023</h3>
+                        <h3>Triple Black Belt in Python, MERN, C#</h3>
+                    </div>
+                    <div class="edu-box">
+                        <h1>Other Stuff As Well</h1>
+                        <h3>To be continued</h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+<!----------------- Column 2 ----------------->
+            <div class="col2">
+
+<!----------------- Connect Request Box ----------------->
+                <div class="connection-requests">
+                    <div class="title-bar">
+                        <h3 id="connect-req-num">2</h3>
+                        <h2>Connection Requests</h2>
+                    </div>
+                    <div id="user-box-phil" class="request-box">
+                        <div class="req-image-name">
+                            <img src="imgs\images\phil-s.jpg" alt="phil" class="connect-img">
+                            <h2>Phil P</h2>
+                        </div>
+                        <div class="req-selectors">
+                            <img onclick="RemoveUserPhil() ; AddNumbers()"src="imgs\icons\accept-circle.png" alt="accept">
+                            <img onclick="RemoveUserPhil() ; SubtractNumbers()" src="imgs\icons\close-circle.png" alt="close">
+                        </div>
+                    </div>
+                    <div id="user-box-alayne" class="request-box">
+                        <div class="req-image-name">
+                            <img src="imgs\images\alayne-s.jpg" alt="alayne" class="connect-img">
+                            <h2>Alayne A</h2>
+                        </div>
+                        <div class="req-selectors">
+                            <img onclick="RemoveUserAlayne() ; AddNumbers()"src="imgs\icons\accept-circle.png" alt="accept">
+                            <img onclick="RemoveUserAlayne() ; SubtractNumbers()" src="imgs\icons\close-circle.png" alt="close">
+                        </div>
+                    </div>
+                </div>
+
+
+<!----------------- Connections Box ----------------->
+                <div class="your-connections">
+                    <div class="title-bar">
+                        <h3 id="connect-num">10</h3>
+                        <h2>Your Connections</h2>
+                    </div>
+                    <div class="connection-box">
+                        <img src="imgs\images\Fox.png" alt="McCloud" class="connect-img">
+                        <h2>FOOOOOOX!</h2>
+                    </div>
+                    <div class="connection-box">
+                        <img src="imgs\images\arry-s.jpg" alt="Don't Ask" class="connect-img">
+                        <h2>Don't Ask</h2>
+                    </div>
+                    <div class="view-more">
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

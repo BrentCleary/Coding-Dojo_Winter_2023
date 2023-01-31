@@ -1,0 +1,272 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*------------- Containers ---------------*/
+
+.container {
+    height: 900px;
+    margin: 0 auto;
+}
+
+
+/*------------- Rows and Columns ---------------*/
+
+.row1 {
+    width: 900px;
+    height: 800px;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+.col1 {
+    height: 500;
+    flex: 2;
+
+}
+
+.col2 {
+    height: 500;
+    flex: 1;
+
+}
+
+
+/*------------- Content-Blocks ---------------*/
+
+
+/*------------- Nav-Bar ---------------*/
+
+.nav-bar {
+    height: 70px;
+    width: 900px;
+    margin: 0 auto;
+    background-color:indigo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    flex:1;
+    margin-left: 50px;
+    color: aliceblue;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-links a {
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.sign-out-box {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.sign-out-btn {
+    background-color: aqua;
+    width: 100px;
+    height: 40px;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+.active {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/*------------- User-Profile Block ---------------*/
+
+
+.user-profile {
+    width: inherit;
+    padding-bottom: 10px;
+    margin: 50px 50px 0px 50px;
+
+    border: 2px solid gray;
+}
+
+.header-bar {
+    width: inherit;
+    height: 100px;
+    background-color:rgb(255, 37, 26);
+}
+
+.user-img {
+    height: 100px;
+    border-radius: 50%;
+    margin: 50px 0px 0px 30px;
+}
+
+.user-profile h1 {
+    margin: 50px 0px 0px 30px;
+}
+
+.user-location {
+    display: flex;
+    margin: 15px 0px 0px 30px;
+
+}
+
+.user-description {
+    margin: 15px 0px 0px 30px;
+}
+
+.user-edit {
+    display: flex;
+    margin: 15px 0px 0px 30px;
+}
+
+.icon-size {
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+/* Function # ID's */
+
+#username {
+
+}
+
+
+/*------------- Education-Block ---------------*/
+
+.education {
+    width: inherit;
+    padding-bottom: 2px;
+    margin: 50px 50px 0px 50px;
+    border: 2px solid gray;
+}
+
+.title-bar {
+    width: inherit;
+    height: 50px;
+    background-color:rgb(0, 34, 75);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.title-bar h2 {
+    margin-left: 10px;
+    color: aliceblue;
+}
+
+.title-bar h3 {
+    margin-left: 25px;
+    color: aliceblue;
+    background-color:royalblue;
+    border-radius: 50%;
+}
+
+.edu-box {
+    width: inherit;
+    margin: 4px;
+    padding: 4px;
+    margin-top: 5px;
+}
+
+.edu-box h3 {
+    color: rgb(62, 62, 62);
+}
+
+
+/*------------- Connections-Request Block ---------------*/
+
+.connection-requests {
+    width: inherit;
+    margin: 50px 50px 0px 50px;
+    padding-bottom: 2px;
+    border: 2px solid gray;
+}
+
+.request-box {
+    width: inherit;
+    height: 100px;
+    margin: 4px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.req-image-name {
+    display: flex;
+    align-items: center;
+
+}
+
+.req-selectors img {
+    height: 30px;
+}
+
+.connect-img {
+    height: 80px;
+    border-radius: 50%;
+    margin: 0px 5px 0px 5px;
+}
+
+#user-box-phil {
+    
+}
+
+#user-box-alayne {
+
+}
+
+#connect-req-num {
+
+}
+
+#connect-num {
+
+}
+
+
+
+/*------------- Your-Connections Block ---------------*/
+
+.your-connections {
+    width: inherit;
+    margin: 50px 50px 0px 50px;
+    padding-bottom: 2px;
+    border: 2px solid gray;
+}
+
+.connection-box {
+    width: inherit;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 4px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.view-more {
+    width: inherit;
+    border-top: 3px solid gray;
+    display: flex;
+    align-items: center;
+
+}
+
+.view-more a {
+    font-weight: bold;
+    color:aquamarine;
+    font-size: medium;
+    margin-left: 10px;
+}
