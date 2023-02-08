@@ -34,7 +34,7 @@ while game_continue == True:
     print(f"You are {player.name}. You approach a {enemy.name}!")
     # clears response
     response = ""
-
+# 
     # Pick Weapon for character (pick_tool)
     pick_tool = input("1) sword\n2) stick\n3) star:\t")
     response = ""
