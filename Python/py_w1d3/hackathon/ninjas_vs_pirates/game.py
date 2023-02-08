@@ -13,33 +13,28 @@ jack_sparrow = Pirate("Jack Sparrow")
 # jack_sparrow.show_stats()
 
 
-
-
-# While Loop for Game Logic 
-
 # Game Start
 
+# generates empty variables to hold instances
 player = []
 enemy = []
 game_continue = True
 
-# generates empty variables to hold instances
-
-    # Player Select - Assigns
-response = input("Select your character.\n 1) Ninja: Michelanglo\n 2) Pirate: Jack Sparrow")
-# input "1" assigns Ninja to player/ Pirate to enemy. input "2 is opposite" 
-if response == "1":
-    player = michelangelo
-    enemy = jack_sparrow
-elif response == "2":
-    player = jack_sparrow
-    enemy = michelangelo
+while game_continue == True:
+# Player Select - Assigns
+    response = input("Select your character.\n 1) Ninja: Michelanglo\n 2) Pirate: Jack Sparrow")
+    # input "1" assigns Ninja to player/ Pirate to enemy. input "2 is opposite" 
+    if response == "1":
+        player = michelangelo
+        enemy = jack_sparrow
+    elif response == "2":
+        player = jack_sparrow
+        enemy = michelangelo
 
     print(f"You are {player.name}. You approach a {enemy.name}!")
     # clears response
     response = ""
 
-while game_continue == True:
     # Pick Weapon for character (pick_tool)
     pick_tool = input("1) sword\n2) stick\n3) star:\t")
     response = ""
@@ -62,7 +57,9 @@ while game_continue == True:
 
         else:
             print(">>> Please choose a valid option")
-
+    
+        if player.health <= 0 or enemy.health <= 0:
+            game_continue = False
 #         # CPU
 #!!!!!!!!!-------------- Update with Pirate methods 
 #         dice_roll = random.randint(1,2)
@@ -70,9 +67,6 @@ while game_continue == True:
 #             enemy.attack(player)
 #         else:
 #             enemy.show_stats()
-
-    if player.health or enemy.health <= 0:
-        game_continue = False
 
 
 
