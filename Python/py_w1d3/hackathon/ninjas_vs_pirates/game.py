@@ -57,9 +57,13 @@ while game_continue == True:
 
         else:
             print(">>> Please choose a valid option")
-    
+
+        print(f"player hp = {player.health}" )
+        print(f"enemy hp = {enemy.health}" )    
         if player.health <= 0 or enemy.health <= 0:
             game_continue = False
+            break
+
 #         # CPU
 #!!!!!!!!!-------------- Update with Pirate methods 
 #         dice_roll = random.randint(1,2)
@@ -68,10 +72,7 @@ while game_continue == True:
 #         else:
 #             enemy.show_stats()
 
-
-
-# # endgame
-
+# endgame
 print(f"{player.name} hp = ", player.health)
 print(f"{enemy.name} hp = ", enemy.health)
 if enemy.health <= 0 and player.health > 0:
