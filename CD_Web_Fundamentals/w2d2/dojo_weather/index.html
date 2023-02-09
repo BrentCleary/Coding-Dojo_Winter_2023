@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DojoWeather</title>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar-cont">
+        <div class="nav-bar-logo">
+            <h1>DojoWeather</h1>
+        </div>
+        <div class="nav-bar-links">
+            <h2 onclick="AlertMessage(this)">Burbank</h2>
+            <h2 onclick="AlertMessage(this)">Chicago</h2>
+            <h2 onclick="AlertMessage(this)">Dallas</h2>
+        </div>
+    </div>
+
+    <!-- Location Bar -->
+    <div class="loc-bar-cont">
+        <div class="loc-bar-city">
+            <h2>San Jose</h2>
+        </div>
+        <div class="loc-bar-temp">
+            <h4>show temperature in <select name="temp" id="temp-system" onchange="TempChange(this)">
+                <option value="C">C°</option>
+                <option value="F">F°</option>
+            </select></h4>
+        </div>
+    </div>
+
+    <!-- Weather Container -->
+    <div class="weather-bar-cont">
+    
+        <!-- Weather Day Container -->
+        <div class="weather-day-cont">
+            <div class="weather-day-bar">
+                <h1>Today</h1>
+            </div>
+            <div class="weather-img-bar">
+                <img class="weather-img" src="imgs\some_rain.png" alt="sun">
+            </div>
+            <div class="weather-txt-bar">
+                <h3>some rain</h3>
+            </div>
+
+            <!-- Temperature Change Bar -->
+            <div class="weather-temp-bar">
+                <h1 class="temp-hot" id="temp1">24</h1>
+                <h1 class="temp-cold" id="temp2">18</h1>
+            </div>
+        </div>
+
+        <!-- Weather Day Container -->
+        <div class="weather-day-cont">
+            <div class="weather-day-bar">
+                <h1>Tomorrow</h1>
+            </div>
+            <div class="weather-img-bar">
+                <img class="weather-img" src="imgs\some_sun.png" alt="sun">
+            </div>
+            <div class="weather-txt-bar">
+                <h3>some sun</h3>
+            </div>
+
+            <!-- Temperature Change Bar -->
+            <div class="weather-temp-bar">
+                <h1 class="temp-hot" id="temp3">27</h1>
+                <h1 class="temp-cold" id="temp4">19</h1>
+            </div>
+        </div>
+
+        <!-- Weather Day Container -->
+        <div class="weather-day-cont">
+            <div class="weather-day-bar">
+                <h1>Friday</h1>
+            </div>
+            <div class="weather-img-bar">
+                <img class="weather-img" src="imgs\some_clouds.png" alt="cloud">
+            </div>
+            <div class="weather-txt-bar">
+                <h3>some clouds</h3>
+            </div>
+
+            <!-- Temperature Change Bar -->
+            <div class="weather-temp-bar">
+                <h1 class="temp-hot" id="temp5">21</h1>
+                <h1 class="temp-cold" id="temp6">16</h1>
+            </div>
+        </div>
+
+        <!-- Weather Day Container -->
+        <div class="weather-day-cont">
+            <div class="weather-day-bar">
+                <h1>Saturday</h1>
+            </div>
+            <div class="weather-img-bar">
+                <img class="weather-img" src="imgs\some_sun.png" alt="sun">
+            </div>
+            <div class="weather-txt-bar">
+                <h3>some sun</h3>
+            </div>
+
+            <!-- Temperature Change Bar -->
+            <div class="weather-temp-bar">
+                <h1 class="temp-hot" id="temp7">26</h1>
+                <h1 class="temp-cold" id="temp8">21</h1>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Cookie Bar -->
+    <div class="cookie-bar-cont">
+        <div class="cookie-img-bar">
+            <img src="imgs\cookie.png" alt="cookie_img">
+        </div>
+        <div class="cookie-txt-bar">
+            <h2>Stop! Cookie Time!</h2>
+            <h4>We use cookies (sadly no the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></h4>
+        </div>
+        <div class="cookie-btn-bar">
+            <button class="cookie-btn" id="accept-cookies" onclick="RemoveCookieAlert(this)">I Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

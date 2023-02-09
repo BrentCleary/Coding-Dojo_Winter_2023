@@ -25,9 +25,36 @@ function render(theDojo) {
 //        under the adjacent (all sides and corners) squares.
 //        Use i and j as the indexes to check theDojo.
 function howMany(i, j, element) {
-    // If current element [i,j] is clicked
-    // return sum of [i,j-1]"one-left" + [i,j+1]"one-right" + [i-1,j]"one-up" + [i+1,j]"one-down" + [i-1,j-1]"one-up-left" + [i-1,j+1]"one-up-right" + [i+1,j-1]"one-down-left" + [i+1,j]"one-down-right"    
+    
+    var sum = 0;
 
+        // var topSum = (theDojo[i-1][j-1]) + (theDojo[i-1][j-1]) + (theDojo[i-1][j-1]);
+        // var midSum = (theDojo[i][j-1]) + (theDojo[i][j+1]);
+        // var topSum = (theDojo[i+1][j-1]) + (theDojo[i+1][j]) + (theDojo[i+1][j-1]);
+
+        var topl = (theDojo[i-1][j-1]);
+        var topm = (theDojo[i-1][j]);
+        var topr = (theDojo[i-1][j+1]);
+        var midl = (theDojo[i][j-1]);
+        var midr = (theDojo[i][j+1]);
+        var botl = (theDojo[i+1][j-1]);
+        var botm = (theDojo[i+1][j]);
+        var botr= (theDojo[i+1][j+1]);
+        
+        // top-left corner
+        if(i < 1 && j < 1)
+        {
+            sum = midr + botm + botr;
+        }
+        // // top row
+        // else if(i < 1)
+        // {
+        //     sum = 
+        // }
+
+
+
+    console.log(sum);
     console.log({i, j});
     alert("TODO - determine how many ninjas are hiding in adjacent squares");
 }
