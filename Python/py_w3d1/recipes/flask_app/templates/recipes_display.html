@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOW ALL RECIPES</title>
+</head>
+<body>
+    
+    <h1>Welcome {{ logged_user.first_name }}</h1>
+
+    <h1>SHOW ALL RECIPES</h1>
+
+    <a href="/recipes/new">CREATE NEW RECIPE</a>
+
+    <p></p>
+
+    <p>All posted recipes:</p>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Under 30 Min</th>
+                <th>Posted By</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for one_recipe in all_recipes %}
+            <tr>
+                <th>{{one_recipe.name}}</th>
+                
+                <th>{% if one_recipe.under_30 == 1 %}
+                    yes
+                {% else %}
+                    no
+                {% endif %}</th>
+                
+                <th>{{one_recipe.creator.first_name}} {{one_recipe.creator.last_name}}</th>
+                <th><a href='/recipes/{{one_recipe.id}}''> VIEW RECIPE </a></th>
+                {% if one_recipe.creator.id == session.user_id %}
+                <th><a href='/edit/{{one_recipe.id}}'> EDIT </a></th>
+                <th><a href='/delete/{{one_recipe.id}}'> DELETE </a></th>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+
+
+
+    </table>
+
+    <hr>
+
+    <a href="/logout">LOGOUT</a>
+
+</body>
+</html>

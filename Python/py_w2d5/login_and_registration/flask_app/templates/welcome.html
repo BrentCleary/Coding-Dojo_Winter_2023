@@ -7,15 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello from Index</h1>
-    <hr>
-    {% for i in range(times) %}
-    <p>{{name}} is cool</p>
-    {% if i%2 == 0 %}
-        <p>{{name}} is bogus</p>
-    {% endi %}
-    {% endfor %}
 
+    <h1>Welcome {{logged_user.first_name}}!</h1>
     
+    <a href="/logout">Logout</a>
 </body>
 </html>

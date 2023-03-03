@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOW ALL RECIPES</title>
+</head>
+<body>
+    
+    {{all_characters}}
+    {{logged_user}}
+
+    <p>Welcome</p>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Experience</th>
+                <th>Level</th>
+                <th>Gold</th>
+                <th>Attack Power</th>
+                <th>Skill Power</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for one_character in all_characters %}
+            <tr>
+                <th>{{one_character.name}}</th>
+                <th>{{one_character.experience}}</th>
+                <th>{{one_character.level}}</th>
+                <th>{{one_character.gold}}</th>
+                <th>{{one_character.attackpower}}</th>
+                <th>{{one_character.skillpower}}</th>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+
+
+    </table>
+
+    <hr>
+
+    <a href="/logout">LOGOUT</a>
+
+</body>
+</html>

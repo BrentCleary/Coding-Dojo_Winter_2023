@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One RECIPE</title>
+</head>
+<body>
+
+    
+    <div>
+        <h2>Posted By: {{ creator_id.first_name }}</h2>
+    </div>
+
+    <div>
+        <h1>{{ single_recipe.name }}</h1>
+    </div>
+
+    
+    <div>    {{ single_recipe.description }}</div>
+    <p>Under 30 Min:{% if single_recipe.under_30 == 1 %}
+                yes
+            {% else %}
+                no
+            {% endif %}
+    </p>
+    <div>    {{ single_recipe.instructions }}</div>
+    <div>    {{ single_recipe.date_made }}</div>
+
+    <hr>
+
+    <a href="/recipes">BACK TO RECIPES</a>
+
+    <hr>
+
+    <a href="/logout">LOGOUT</a>
+
+</body>
+
+</html>

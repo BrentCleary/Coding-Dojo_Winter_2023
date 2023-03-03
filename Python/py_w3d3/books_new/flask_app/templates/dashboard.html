@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOW ALL RECIPES</title>
+</head>
+<body>
+    
+    <h1>Welcome {{ logged_user.first_name }}</h1>
+
+    <h1>SHOW ALL MODELS</h1>
+
+    <a href="/model/new">CREATE NEW "MODEL"</a>
+
+    <p></p>
+
+    <p>All posted "MODELS":</p>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>MODEL "COL 1"</th>
+                <th>MODEL "COL 2"</th>
+                <th>MODEL "COL 3"</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            {% for one_model in all_models %}
+            <tr>
+                <th>{{one_model.col1}}</th>
+                
+                <th>{{one_model.col2}}</th>
+                
+                <th>{{one_model.creator.first_name}} {{one_model.creator.last_name}}</th>
+                <th><a href='/recipes/{{one_model.id}}''> VIEW RECIPE </a></th>
+            
+                {% if one_recipe.creator.id == session.user_id %}
+                    <th><a href='/edit/{{one_model.id}}'> EDIT </a></th>
+                    <th><a href='/delete/{{one_model.id}}'> DELETE </a></th>
+                {% endif %}
+            
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+    <hr>
+
+    <a href="/logout">LOGOUT</a>
+
+</body>
+</html>

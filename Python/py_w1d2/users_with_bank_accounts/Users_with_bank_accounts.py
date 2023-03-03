@@ -34,7 +34,8 @@ class User:
     def __init__(self, name, email):
         self.name = name
         self.email = email
-        self.account = BankAccount(int_rate=0.02, balance=0)
+        self.account = BankAccount(balance=0, int_rate=0.02)
+        self.account = BankAccount(0.02, 0)
 
     def make_deposit(self, amount):
         self.account.deposit(amount)
@@ -46,6 +47,7 @@ class User:
 
     def display_user_balance(self):
         print(self.account.display_account_info())
+
 
 firstCustomer = User("Michael", "Mike@email.com")
 firstCustomer.make_deposit(100).make_withdrawl(50).display_user_balance()

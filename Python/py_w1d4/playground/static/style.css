@@ -1,0 +1,21 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+/* Container for Boxes */
+.boxcontainer {
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+/* Boxes */
+.bluebox {
+    border: 3px black solid;
+    background-color:cornflowerblue;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+
+}

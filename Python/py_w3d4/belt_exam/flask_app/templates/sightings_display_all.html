@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOW ALL RECIPES</title>
+</head>
+<body>
+    
+
+    <!-- SITE TITLE AND LOGGED USER NAME -->
+    <div>
+        <h1>Sasquatch Websighting</h1>
+    </div>
+    <div>
+        <h1>{{logged_user.first_name}} {{logged_user.last_name}}</h1>
+    </div>
+
+    <hr>
+
+    <h3>Reported Sightings</h3>
+    <table>
+        {% for one_sighting in all_sightings %}
+        <thead>
+            <tr>
+                <th>{{one_sighting.location}} - {{one_sighting.time}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- CREATE JINJA INSTANCE DISPLAY -->
+                <th>Reported By: {{one_sighting.reporter.first_name}} {{one_sighting.reporter.last_name}}</th>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>
+                    <a href="/sightings/{{one_sighting.id}}">View</a>
+                    {% if one_sighting.reporter.id == session.user_id %}
+                    <a href="/edit/{{one_sighting.id}}">Edit</a>
+                    <a href="/delete/{{one_sighting.id}}">Delete</a>
+                    {% endif %}
+                </th>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+    
+    <hr>
+
+    <a href="/sightings/new">Report a Sighting</a>
+
+    <hr>
+
+    <a href="/logout">LOGOUT</a>
+
+</body>
+</html>

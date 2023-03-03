@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+    
+    <!-- Styling -->
+    <style>
+
+        .centertext{
+            text-align: center;
+        }
+
+        .container{
+            width: fit-content;
+            margin: 0 auto;
+            padding: 0 auto;
+        }
+        
+        .flexdisplay{
+            display: flex;
+        }
+
+        .counterdisplay {
+            border: 3px rgb(0, 0, 0) solid;
+            background-color: rgb(0, 255, 72);
+            color: rgb(255, 255, 255);
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .bluebutton {
+            border: 3px rgb(0, 0, 0) solid;
+            background-color: blue;
+            color: rgb(255, 255, 255);
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .yellowbutton {
+            border: 3px rgb(0, 0, 0) solid;
+            background-color: rgb(255, 106, 0);
+            color: rgb(255, 255, 255);
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            display: inline-block;
+        }
+        
+        .redbutton {
+            border: 3px rgb(0, 0, 0) solid;
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 255, 255);
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        </style>
+        
+
+</head>
+
+<body class="container">
+    <div>
+        <h1 class="centertext">Actual Visit = {{session['actualVisit']}}</h1>
+    </div>
+
+    <div class="flexdisplay">
+
+        <!-- Displays the number of visits stored in session['visit'] -->
+        <!-- if session['visit'] = 0, will display 1 -->
+        <div>
+            <p class="counterdisplay centertext fs-3">Visit = {{session['visit']}}</p>
+        </div>
+
+        <!-- Add2 calls on add2 route (AddVisits Method) -->
+        <!-- Adds 1 to visit, + the '/' routes +1 for a total +2 -->
+        <form action="/add2">
+            <button class="bluebutton">Add 2 Visits</button>
+        </form>
+
+        <form action="formsubmission" method="post">
+            <button class="yellowbutton">Custom Submit</button>
+            <input type="text" name="custom">
+        </form>
+
+        <!-- Reset Button - calls on @app.route('/redirect')) -->
+        <!-- resets session['visit'] to 0 -->
+        <!-- Redirects to @app.route('/') -->
+        <form action="/redirect">
+            <button class="redbutton">Reset</button>
+        </form>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+</head>
+
+<style>
+
+.center {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.bluebox {
+    border: 3px black solid;
+    background-color: {{ color }};
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    display: inline-block;
+}
+</style>
+
+<body class="center">
+
+    <h1>Welcome!</h1>
+
+        {% for i in range (num) %}
+
+            <div class="bluebox"></div>
+        
+        {% endfor %}
+
+    </div>
+    
+</body>
+
+</html>

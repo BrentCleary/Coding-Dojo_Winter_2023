@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <hr>
+    <form action="/process" method="post">
+        <p>
+            <!-- Labels must share "for" input "id" to match -->
+            <label for="dog_name">name a dog</label>
+            <input type="text" id="name">
+        </p>
+        <p>
+            
+            <label for="dog_age">dog age?</label>
+            <input type="text" name="age">
+        </p>
+        <p>
+            breed:
+            <input type="text">
+        </p>
+
+    <input type="submit" value="Make a Dog!">
+    </form>
+</body>
+
+</html>

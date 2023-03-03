@@ -1,0 +1,58 @@
+
+.img-size {
+    height: 200px;
+}
+
+.box-1 {
+    height: 300px;
+    width: 300px;
+}
+
+/* .center-container {
+    height: 1000px;
+    width: 1000px;
+
+} */
+
+.top-nav-bar {
+    height: 200px;
+    width: 1000px;
+}
+
+.bottom-nav-bar {
+    height: 200px;
+    width: 1000px;
+}
+
+.img-container {
+
+}
+
+.carousel-item {
+    height: 48rem;
+    background: cadetblue;
+    color: white;
+    position: relative;
+
+}
+.container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-right: 50px;
+}
+.overlay_image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+}
+.center-container {
+    height: 800px;
+    width: 1000px;
+
+}   
