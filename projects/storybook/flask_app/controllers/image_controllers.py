@@ -67,7 +67,7 @@ def shoot_arrow_api_call():
     
     # API CREATE CALL - Stores URL in Results
     results = openai.Image.create(
-    prompt="a human warrior shooting an arrow at an enormous scary blue dragon on a castle tower over a medieval city",
+    prompt="a human warrior aiming a bow and arrow at an enormous scary blue dragon on a castle tower over a medieval city",
     n=1,
     size="1024x1024"
     )

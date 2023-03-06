@@ -1,3 +1,13 @@
+/* @font-face {
+    src: url(../static/font/GoudyBookletter1911-Regular.ttf);
+    font-family: 'storybook';
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+* {
+    font-family: 'Goudy Bookletter 1911', serif;
+}
 
 .img-size {
     height: 200px;
@@ -7,6 +17,7 @@
     height: 300px;
     width: 300px;
 }
+
 
 /* .center-container {
     height: 1000px;

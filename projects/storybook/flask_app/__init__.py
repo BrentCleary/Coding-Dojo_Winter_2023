@@ -6,6 +6,6 @@ app = Flask(__name__)
 app.secret_key = "secret"
 
 # Key for API calls - Import into image controller
-APIKEY = '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';
+APIKEY = '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';
 DATABASE = 'storybook_schema'
 
