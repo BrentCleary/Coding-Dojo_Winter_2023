@@ -20,14 +20,14 @@ function StrEncode(str)
 }
 
 /* 
-  Given in an alumni interview
-  String Encode
-  You are given a string that may contain sequences of consecutive characters.
-  Create a function to shorten a string by including the character,
-  then the number of times it appears. 
+    Given in an alumni interview
+    String Encode
+    You are given a string that may contain sequences of consecutive characters.
+    Create a function to shorten a string by including the character,
+    then the number of times it appears. 
 
-  If final result is not shorter (such as "bb" => "b2" ),
-  return the original string.
+    If final result is not shorter (such as "bb" => "b2" ),
+    return the original string.
   */
 
 //   counter
