@@ -55,6 +55,8 @@ const expectedMerge4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //  * @returns {Array<number>} A new sorted array containing all the elements of
 //  *    both given halves.
 
+
+
 // Posted by Andrew Pham's group in Discord 03/08/2023
 
 function merge(left = [], right = [], mergeArr = []) {
