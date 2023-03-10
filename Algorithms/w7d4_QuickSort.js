@@ -69,4 +69,4 @@ function partition(arr = [], left = 0, right = arr.length - 1) {
      
     
   }
-  console.log(partition(arr2))
+  console.log(partition(nums2))
