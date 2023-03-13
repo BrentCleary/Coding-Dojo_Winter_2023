@@ -6,15 +6,17 @@ const Form = (props) => {
 
     const createBox = (e) => {
         e.preventDefault();
-        
+        props.onBoxGenerate(color);
 
     }
 
     return(
 
         <div>
+            <h1>Pick a Color</h1>
             <form onSubmit={createBox}>
-                <input type='text'/>
+                <input type='text'onChange={(e) => setColor(e.target.value)}/>
+                <button>Create Box</button>
             </form>
         </div>
     )

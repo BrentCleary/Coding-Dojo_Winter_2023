@@ -3,20 +3,26 @@ import Form from './components/Form';
 import Display from './components/Display';
 import { useState } from 'react';
 
-function App() {
+// Box Generator Completed with the help of TA Emilie Wu,
+// without whose help I would have missed essential mapping functions
+// styling syntax and array functionality
+// Thanks Emilie
 
-  const Color = (props) => {
-    [currentColor, setCurrentColor] = useState('')
+function App() {
+  const [currentColor, setCurrentColor] = useState(["black"]);
 
     const pickColor = ( newColor ) => {
-      setCurrentColor( newColor );
-    }
-
+      console.log(newColor);
+      // spread operator, adds new color to array
+      setCurrentColor([ ...currentColor, newColor ]);
+      
+    
   };
+
   return (
     <div className="App">
       <Form onBoxGenerate={ pickColor }/>
-      <Display boxColor={newColor}/>
+      <Display boxColor={currentColor}/>
     </div>
   );
 }
