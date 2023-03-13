@@ -4,8 +4,7 @@ const Display = (props) => {
     
     return(
         <div>
-            <div className='oneBox'>
-            </div>
+            <div className='oneBox'></div>
         </div>
     )
 }

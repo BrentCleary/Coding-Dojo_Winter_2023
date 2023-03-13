@@ -15,8 +15,8 @@ function App() {
   };
   return (
     <div className="App">
-      <Form/>
-      <Display/>
+      <Form onBoxGenerate={ pickColor }/>
+      <Display boxColor={newColor}/>
     </div>
   );
 }
