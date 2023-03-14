@@ -15,7 +15,9 @@ const Display = (props) => {
                     display: 'inline-block',
                     margin: "10px",
                     height: "200px",
-                    width: "200px" }} key={index}></div>)
+                    width: "200px" }} 
+                    key={index}>
+                </div>)
             })}
             
         </div>
