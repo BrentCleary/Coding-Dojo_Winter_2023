@@ -15,7 +15,7 @@ const Form = (props) => {
         <div>
             <h1>Pick a Color</h1>
             <form onSubmit={createBox}>
-                <input type='text'onChange={(e) => setColor(e.target.value)}/>
+                <input type='text' onChange={(e) => setColor(e.target.value)}/>
                 <button>Create Box</button>
             </form>
         </div>

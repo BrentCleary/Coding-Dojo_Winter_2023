@@ -9,6 +9,7 @@ import { useState } from 'react';
 // Thanks Emilie
 
 function App() {
+
   const [currentColor, setCurrentColor] = useState([""]);
 
     const pickColor = ( newColor ) => {
