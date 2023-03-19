@@ -10,9 +10,9 @@ const Display = ({task, index, deleteItem}) => {
 
     return(
 
-        <div>
-            <h1> {listItem} <input type='checkbox' value='0'/> </h1> 
-            <h3> {dueDate} </h3>
+        <div className='mt-4'>
+            <h3> Task: {listItem} <input type='checkbox' value='0'/> </h3> 
+            <h4> Due: {dueDate} </h4>
             <button className='btn btn-danger' onClick={deleteOneItem}>Delete</button>
 
         </div>
