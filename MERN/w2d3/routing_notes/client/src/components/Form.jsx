@@ -21,28 +21,28 @@ const Form = () => {
         <form onSubmit={handleSubmit}>
             <div>
                 <h3>Topic</h3>
-            <div>
-                <p>
-                    Pokemon:
-                    <input 
-                        type="radio" 
-                        name="topic" 
-                        id="pokemon" 
-                        checked={topic === 'pokemon'} 
-                        onChange={(e) => setTopic('pokemon')}
-                    />
-                </p>
-                <p>
-                    Berries:
-                    <input 
-                        type="radio" 
-                        name="topic" 
-                        id="berries"
-                        checked={topic === 'berries' }
-                        onChange={(e) => setTopic('berries')} 
-                    />
-                </p>
-            </div>
+                <div>
+                    <p>
+                        Pokemon:
+                        <input 
+                            type="radio" 
+                            name="topic" 
+                            id="pokemon" 
+                            checked={topic === 'pokemon'} 
+                            onChange={(e) => setTopic('pokemon')}
+                        />
+                    </p>
+                    <p>
+                        Berries:
+                        <input 
+                            type="radio" 
+                            name="topic" 
+                            id="berries"
+                            checked={topic === 'berries' }
+                            onChange={(e) => setTopic('berries')} 
+                        />
+                    </p>
+                </div>
             </div>
                 <p> 
                     Id: 

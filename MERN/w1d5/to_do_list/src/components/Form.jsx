@@ -29,7 +29,7 @@ const Form = (props) => {
                     <input value={dueDate} type='date' onChange={(e) => setDueDate(e.target.value)}/>
                 </p>
 
-                <button class='btn btn-success'>Add To List</button>
+                <button className='btn btn-success'>Add To List</button>
             </form>
         </div>
 
