@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Display = ({task, index, deleteItem}) => {
     
     const { listItem, dueDate } = task; 
@@ -8,34 +9,37 @@ const Display = ({task, index, deleteItem}) => {
         deleteItem(task, index);
     }
 
-
-    // THIS SECTION IS CURRENTLY UNCOMPLETED
-    // ASKING FOR HELP BEFORE SUBMISSION
-
     // Get Check-Box Value
-    const strikeText = (e) => {
-        var checkBox = document.querySelector("#check-box");
-        var taskText = document.querySelector("#task").innerHTML;
-        if(checkBox.checked)
-        {
-            taskText = <del>{listItem}</del>
-            console.log("checked")
-        }
-        else
-        {
-            taskText = {listItem}
-            console.log("nope")
-            return ("nope")
-        }
+    function strikeText()
+    {
+        var checkbox = document.querySelector("#check-box");
+        console.log(checkbox.checked)
+
     }
 
 
     return(
+        
 
         <div className='mt-4'>
-            <div>
-                <h3 id="task"> {listItem} </h3> <input onClick={strikeText} id='check-box' type='checkbox' value='0'/>
+            
+            {/* <div>
+                <h3 id="task"> {listItem} </h3> <input className='strikethrough' id='check-box' type='checkbox' value='0'/>
+            </div> */}
+
+            <div class="form-group text-aligh-center marLeft">
+                <label for="inputName" class="col-md-1 control-label"></label>
+                <div class="col-md-5">
+                    <div class="checkbox">
+                        <input type="checkbox" name="packersOff" id="packers" value="1"/>
+                        <label class="strikethrough">{listItem}</label>
+                    </div>
+                </div>
             </div>
+
+
+            
+
             <h4> Due: {dueDate} </h4>
             <button className='btn btn-danger' onClick={deleteOneItem}>Delete</button>
 

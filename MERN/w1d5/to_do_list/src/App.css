@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+input[type=checkbox]:checked + lable.strike-through {
+  text-decoration: line-through;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

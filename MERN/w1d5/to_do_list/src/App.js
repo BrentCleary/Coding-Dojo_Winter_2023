@@ -1,9 +1,11 @@
 import { useState } from "react";
-
 import Form from "./components/Form";
 import Display from "./components/Display";
 
 import "./App.css";
+
+// Worked with Randy Lynd on CheckBox Strikethrough
+// Hard trouble getting it centered
 
 function App() {
 
