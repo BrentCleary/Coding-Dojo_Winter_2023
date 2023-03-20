@@ -18,6 +18,13 @@ const Form = () => {
         nav(`/${topic}/${id}`);
     }
 
+    // Gets value from select topic field
+    function getNewVal()
+    {
+        var item = document.querySelector("#select").value;
+        console.log(item);
+        return item;
+    }
 
     return (
 
@@ -25,7 +32,13 @@ const Form = () => {
             <div>
                 <h3>Search For:</h3>
                 <div>
-                    <p>
+                    <select name="topic" id="select" onChange={(e) => setTopic(getNewVal(this))}>
+                        <option value='people'>People</option>
+                        <option value='planets'>Planets</option>
+                    </select>
+
+                    {/* Code from Demo / Save for Reference */}
+                    {/* <p>
                         People:
                         <input
                             type="radio"
@@ -44,7 +57,9 @@ const Form = () => {
                             checked={topic === 'planets'}
                             onChange={(e) => setTopic('planets')}
                         />
-                    </p>
+                    </p> */}
+
+
 
                 </div>
             </div>
