@@ -21,6 +21,7 @@ const People = () => {
         })
         .catch((err) => console.log(err))
 
+
     },[id])
 
     return(
