@@ -16,7 +16,8 @@ const UpdatePage = () => {
     useEffect(() => {
         axios.get(`http://localhost:8000/api/products/${id}`)
         .then((res) => {
-            const product = res.data
+            const product = res.data.products
+            console.log(res.data)
 
             setName(product.name)
             setPrice(product.price)
@@ -30,15 +31,16 @@ const UpdatePage = () => {
         e.preventDefault();
         
         axios
-            .post(`http://localhost:8000/api/products/${id}`, {
+            .put(`http://localhost:8000/api/products/${id}`, {
                 name, 
                 price, 
                 description, 
                 inStock, 
                 image,
         })
-            .then(() => {
-                nav('/products');
+            .then((results) => {
+                console.log(results);
+                nav(`/products/${id}`);
             })
             .catch((err) => console.log(err));
     };
