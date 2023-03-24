@@ -26,7 +26,6 @@ module.exports = {
     },
 
 
-
     getOneJoke: (req, res) => {
         Jokes.findOne({ _id: req.params.id })
         .then((oneJoke) => {
@@ -36,7 +35,6 @@ module.exports = {
             res.json({ message: 'Heyyyyyyyy....... Not funny.', error: err})
         );
     },
-
 
 
     updateOneJoke: (req, res) => {
@@ -50,7 +48,6 @@ module.exports = {
     },
 
 
-
     deleteOneJoke: (req, res) => {
         Jokes.deleteOne({ _id: req.params.id})
         .then((result) => {
@@ -59,7 +56,6 @@ module.exports = {
         .catch((err) => 
             res.json({ message: 'Heyyyyyyyy....... Not funny.', error: err})
         );
-        res.json({ status: 'ok' });
     
     },
 };
