@@ -6,6 +6,8 @@ const CreatePage = () => {
 
     const nav = useNavigate();
 
+    const [formErrors, setFormErrors] = useState([]);
+
     const[name, setName] = useState('');
     const[price, setPrice] = useState('');
     const[description, setDescription] = useState('');
